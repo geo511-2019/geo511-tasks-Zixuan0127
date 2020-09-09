@@ -35,7 +35,7 @@ fig2 =
   labs(x="Year",
        y= "GDP Per Capita",
        col = "Continent",
-       size= "Population")+
+       size= "Population (100K)")+
   theme_bw()
 
 print(fig2)
