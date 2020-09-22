@@ -28,9 +28,9 @@ gapminder_con_year = gapminder %>%
 fig2 = 
   ggplot(gapminder_con_year,aes(year,gdpPercapweighted))+
   geom_line(data = gapminder_noKuwait,aes(year,gdpPercap,color = continent,group = country))+
-  geom_point(data = gapminder_noKuwait,aes(year,gdpPercap,color = continent,size = pop/100000))+
+  geom_point(data = gapminder_noKuwait,aes(year,gdpPercap,color = continent,size = pop/1000000))+
   geom_line()+
-  geom_point(aes(size = pop/100000))+
+  geom_point(aes(size = pop/1000000))+
   facet_wrap(~ continent, nrow =1)+
   labs(x="Year",
        y= "GDP Per Capita",
